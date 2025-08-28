@@ -12,7 +12,7 @@ document.getElementById('ping').addEventListener('click', function(){
 
 if('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
-    .then(()=> console.log('service Worker Registereed', err))
+    .then(()=> console.log('service Worker Registereed'))
     .catch(err => console.log('SW registration failed', err));
 
 }
